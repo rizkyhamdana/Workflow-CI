@@ -3,7 +3,7 @@ name: MLflow Retraining CI
 on:
   push:
     paths:
-      - 'Workflow-CI/MLProject/**'
+      - 'MLProject/**'
 
 jobs:
   retrain:
@@ -23,4 +23,4 @@ jobs:
 
       - name: Run MLflow Project
         run: |
-          mlflow run Workflow-CI/MLProject --entry-point main --no-conda
+          mlflow run MLProject --entry-point main --no-conda
